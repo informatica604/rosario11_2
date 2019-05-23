@@ -1,0 +1,94 @@
+a:link, a:visited {
+  color: #ADA996;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1{
+	font-size: 25px;/*Tamaño de la fuente*/
+}
+
+h2{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+header, section, nav, article{/*seleccionar varios estilos*/
+	display: block;/*elementos uno debajo del otro*/
+}
+
+body{
+	background: #41295a;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: sans-serif;
+}
+
+.agrupar{/*clase*/
+	width: 900px;/*anchura*/
+	margin: 10px auto;/*margen espaciado hacia fuera automatico eje de y x*/
+	/*padding: 40px;relleno del espaciado hacia adentro*/
+	border: 1px solid #ADA996;
+	background: white;
+}
+
+article{
+	padding-top: 2em;
+	padding-left: 2em;
+}
+
+*{/*selector universal*/
+	margin: 0;/*margen 0*/
+	padding: 0;/*padding 0*/
+}
+
+.header{		
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: 1px solid #ADA996;/*borde de 1pixel solido de color*/
+	padding:20px;
+}
+
+.header h1{
+	text-align: center;
+}
+
+.menu{
+	padding: 5px 15px;/*relleno de espacion hacia dentro eje x, y*/
+	text-align: left;
+}
+
+.menu li{/*todos los li dentro de menu*/
+	list-style: none;/*estilo de lista ninguno*/
+	padding: 5px;
+	font: bold 14px;
+	/*display: inline-block;elementos en bloque uno al lado del otro*/
+}
+
+.seccion{
+	margin: 15px;
+	width: 900px;
+	float: left;/*flotar hacia la izquierda*/
+}
+.pie{
+	clear: both;/*el contenido anterior vuelve a la normalidad*/
+	padding: 20px;
+}
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 1000px;
+    }
+}
